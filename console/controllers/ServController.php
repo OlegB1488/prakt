@@ -1,21 +1,14 @@
 <?php
 namespace console\controllers;
 
-use yii\web\Controller;
-use app\modules\tehpod\Serv;
-
+use frontend\modules\tehpod\controllers\ChatServer;
+use yii\console\Controller;
 
 class ServController extends Controller
 {
-    /**
-     * Renders the index view for the module
-     * @return string
-     */
-
-    public function actionInit()
+    public function actionStart($port = null)
     {
-        $port = 8000;
-        $server = new Serv();
+        $server = new ChatServer();
         if ($port) {
             $server->port = $port;
         }

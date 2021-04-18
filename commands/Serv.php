@@ -1,23 +1,14 @@
 <?php
-
 namespace app\commands;
 
-use yii\web\Controller;
-use app\modules\tehpod\Serv;
+use app\daemons\EchoServer;
+use yii\console\Controller;
 
-/**
- * Default controller for the `tehpod` module
- */
 class ServController extends Controller
 {
-    /**
-     * Renders the index view for the module
-     * @return string
-     */
-
-    public function actionStart($port = 8000)
+    public function actionStart($port = null)
     {
-        $server = new Serv();
+        $server = new EchoServer();
         if ($port) {
             $server->port = $port;
         }

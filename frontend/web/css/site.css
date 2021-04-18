@@ -89,6 +89,13 @@ li:hover{
     box-shadow: 0 5px #222;
 }
 
+.cont {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
 .search{
     font-size: 200%;
 }
@@ -471,4 +478,16 @@ hr{
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 200%;
+}
+
+.chatwrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30%;
+}
+
+#chat {
+    height: 80vh;
+    padding: 1% 2%;
+    border: 1px solid black;
 }

@@ -3,6 +3,7 @@
 /yii_test
 /yii_test.bat
 
+
 # phpstorm project files
 .idea
 
@@ -19,6 +20,7 @@ Thumbs.db
 
 # composer vendor dir
 /vendor
+/node_modules
 
 # composer itself is not needed
 composer.phar
