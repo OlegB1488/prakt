@@ -455,3 +455,20 @@ hr{
     margin-left: 20%;
     margin-right: 20%;
 }
+
+.tehpod-default-index{
+    background:url("/frontend/web/img/tehfon.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+}
+
+.tehtext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200%;
+}

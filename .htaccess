@@ -2,8 +2,8 @@
     Options +FollowSymlinks
     RewriteEngine On
 </IfModule>
- 
-<IfModule mod_rewrite.c>    
+
+<IfModule mod_rewrite.c>
     RewriteCond %{REQUEST_URI} ^/(admin)
     RewriteRule ^admin/assets/(.*)$ backend/web/assets/$1 [L]
     RewriteRule ^admin/css/(.*)$ backend/web/css/$1 [L]
